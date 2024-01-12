@@ -75,9 +75,7 @@ const Auth = () => {
   }, [isLogin]);
 
   const handleGoogleLogin = () => {
-    console.log(process.env.SERVER_URL);
     window.location.href = `http://localhost:5000/api/v1/user/auth/google`;
-    // window.location.href = `${process.env.SERVER_URL}/auth/google`;
   }
 
   return (
